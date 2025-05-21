@@ -27,7 +27,7 @@ namespace Wolmart_Ecommerce_Marketplace.Controllers
 
                 using (var connection = new SqlConnection(conn))
                 {
-                    string query = "SELECT * FROM Users WHERE Email = @Email AND PasswordHash = @Password";
+                    string query = "SELECT u.*, r.RoleName FROM Users u JOIN UserRoles ur ON u.UserId = ur.UserId JOIN Roles r ON ur.RoleId = r.RoleId WHERE Email = @Email AND PasswordHash = @Password";
 
                     var result = connection.QueryFirstOrDefault<Users>(query, new
                     {
@@ -38,11 +38,12 @@ namespace Wolmart_Ecommerce_Marketplace.Controllers
                     if (result != null)
                     {
                         HttpContext.Session.SetString("UserEmail", result.Email);
-
+                        HttpContext.Session.SetString("UserRole", result.RoleName);
                         return Json(new
                         {
                             status = "success",
-                            message = "Login successful."
+                            message = "Login successful.",
+                            role = result.RoleName
                         });
                     }
                     else

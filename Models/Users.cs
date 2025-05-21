@@ -13,6 +13,7 @@ namespace Wolmart_Ecommerce_Marketplace.Models
         public string UpdatedBy { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public string Password { get; set; }
+        public string RoleName { get; set; }
 
     }
     public class UserRegisteration

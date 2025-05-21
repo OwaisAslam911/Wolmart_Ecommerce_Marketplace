@@ -128,15 +128,21 @@
                 contentType: "application/json",
                 data: JSON.stringify(loginData),
                 success: function (response) {
-                        if (response.status = "success") {
-                            showToastifyMessage(response.message, "success");
-                            setTimeout(() => {
+                    if (response.status === "success") {
+                        showToastifyMessage(response.message, "success");
+                        setTimeout(() => {
+                            if (response.role === "Customer") {
+                                window.location.href = "/Home/Privacy";
+                            } else if (response.role === "Manager") {
+                                window.location.href = "/Manager/Overview";
+                            } else {
                                 window.location.href = "/Home/Index";
-                            }, 1500);
-                        } else {
-                            showToastifyMessage("password and email don't match for the user please try again");
-                        }
+                            }
+                        }, 1500);
+                    } else {
+                        showToastifyMessage("Password and email don't match. Please try again.");
                     }
+                }
                 });
             }
         }
