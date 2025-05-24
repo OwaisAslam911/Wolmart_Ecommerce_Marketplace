@@ -1,60 +1,64 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿
+    <!DOCTYPE html>
+    <html lang="en">
 
 
-<!-- Mirrored from portotheme.com/html/wolmart/shop-banner-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Aug 2024 16:53:23 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <!-- Mirrored from portotheme.com/html/wolmart/shop-banner-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Aug 2024 16:53:23 GMT -->
+    <!-- Added by HTTrack -->
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-    <title>Wolmart eCommmerce Marketplace HTML Template</title>
+        <title>Wolmart eCommmerce Marketplace HTML Template</title>
 
-    <meta name="keywords" content="Marketplace ecommerce responsive HTML5 Template" />
-    <meta name="description" content="Wolmart is powerful marketplace &amp; ecommerce responsive Html5 Template.">
-    <meta name="author" content="D-THEMES">
+        <meta name="keywords" content="Marketplace ecommerce responsive HTML5 Template" />
+        <meta name="description" content="Wolmart is powerful marketplace &amp; ecommerce responsive Html5 Template.">
+        <meta name="author" content="D-THEMES">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="~/assets/images/icons/favicon.png">
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="~/assets/images/icons/favicon.png">
 
-    <!-- WebFont.js -->
-    <script>
-        WebFontConfig = {
-            google: { families: ['Poppins:400,500,600,700'] }
-        };
-        (function (d) {
-            var wf = d.createElement('script'), s = d.scripts[0];
-            wf.src = 'assets/js/webfont.js';
-            wf.async = true;
-            s.parentNode.insertBefore(wf, s);
-        })(document);
-    </script>
+        <!-- WebFont.js -->
+        <script>
+            WebFontConfig = {
+                google: { families: ['Poppins:400,500,600,700'] }
+            };
+            (function (d) {
+                var wf = d.createElement('script'), s = d.scripts[0];
+                wf.src = 'assets/js/webfont.js';
+                wf.async = true;
+                s.parentNode.insertBefore(wf, s);
+            })(document);
+        </script>
 
-    <link rel="preload" href="~/assets/vendor/fontawesome-free/webfonts/fa-regular-400.woff2" as="font" type="font/woff2"
-        crossorigin="anonymous">
-    <link rel="preload" href="~/assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2"
-        crossorigin="anonymous">
-    <link rel="preload" href="~/assets/vendor/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2"
-            crossorigin="anonymous">
-    <link rel="preload" href="~/assets/fonts/wolmart87d5.woff?png09e" as="font" type="font/woff" crossorigin="anonymous">
+        <link rel="preload" href="~/assets/vendor/fontawesome-free/webfonts/fa-regular-400.woff2" as="font" type="font/woff2"
+              crossorigin="anonymous">
+        <link rel="preload" href="~/assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2"
+              crossorigin="anonymous">
+        <link rel="preload" href="~/assets/vendor/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2"
+              crossorigin="anonymous">
+        <link rel="preload" href="~/assets/fonts/wolmart87d5.woff?png09e" as="font" type="font/woff" crossorigin="anonymous">
 
-    <!-- Vendor CSS -->
-    <link rel="stylesheet" type="text/css" href="~/assets/vendor/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="~/assets/vendor/animate/animate.min.css">
+        <!-- Vendor CSS -->
+        <link rel="stylesheet" type="text/css" href="~/assets/vendor/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="~/assets/vendor/animate/animate.min.css">
 
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="~/assets/vendor/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" type="text/css" href="~/assets/vendor/nouislider/nouislider.min.css">
-    <link rel="stylesheet" type="text/css" href="~/assets/vendor/magnific-popup/magnific-popup.min.css">
+        <!-- Plugins CSS -->
+        <link rel="stylesheet" href="~/assets/vendor/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" type="text/css" href="~/assets/vendor/nouislider/nouislider.min.css">
+        <link rel="stylesheet" type="text/css" href="~/assets/vendor/magnific-popup/magnific-popup.min.css">
 
-    <!-- Default CSS -->
-    <link rel="stylesheet" type="text/css" href="~/assets/css/style.min.css">
-</head>
+        <!-- Default CSS -->
+        <link rel="stylesheet" type="text/css" href="~/assets/css/style.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-<body>
-    <div class="page-wrapper">
-        <h1 class="d-none">Wolmart - Responsive Marketplace HTML Template</h1>
-        <!-- Start of Header -->
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <!-- Start of Header -->
         <header class="header">
             <div class="header-top">
                 <div class="container">
@@ -96,14 +100,14 @@
                         @{
                             var roleName = Context.Session.GetString("UserRole");
                         }
-                        @if(roleName == "Customer")
+                        @if (roleName == "Customer")
                         {
                             <a asp-controller="Home" asp-action="Contact" class="d-lg-show">Contact Us</a>
                         }
-                        else if(roleName == "Seller")
+                        else if (roleName == "Seller")
                         {
-                        <a asp-controller="Home" asp-action="Contact" class="d-lg-show">My Shop</a>
-                        
+                            <a asp-controller="Home" asp-action="Contact" class="d-lg-show">My Shop</a>
+
                         }
                         <a asp-controller="Home" asp-action="Account" class="d-lg-show">My Account</a>
                         <a asp-controller="Login" asp-action="Login" class="d-lg-show login sign-in">
@@ -206,7 +210,7 @@
                                     <div class="product product-cart">
                                         <div class="product-detail">
                                             <a asp-controller="Home" asp-action="Product"
-                                                class="product-name">
+                                               class="product-name">
                                                 Blue utility
                                                 pina<br>fore
                                                 denim dress
@@ -218,7 +222,7 @@
                                         </div>
                                         <figure class="product-media">
                                             <a asp-controller="Home" asp-action="Product">
-                                                
+
                                                 <img src="~/assets/images/cart/product-2.jpg" alt="product" width="84"
                                                      height="94" />
                                             </a>
@@ -791,7 +795,7 @@
                                         <a asp-controller="Home" asp-action="Contact">contact-us</a>
                                     </li>
                                     @* <li>
-                                        <a asp-controller="Home" asp-action="Blogs">Blogs</a>
+                                    <a asp-controller="Home" asp-action="Blogs">Blogs</a>
                                     </li> *@
                                     <li>
                                         <a asp-controller="Home" asp-action="FAQ">FAQs</a>
@@ -811,219 +815,15 @@
                 </div>
             </div>
         </header>
-        <!-- End of Header -->
+        </header>
+                <!-- End of Header Top -->
 
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-        <!-- Start of Footer -->
-        <footer class="footer appear-animate" data-animation-options="{
-            'name': 'fadeIn'
-        }">
-            <div class="footer-newsletter bg-primary">
-                <div class="container">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-xl-5 col-lg-6">
-                            <div class="icon-box icon-box-side text-white">
-                                <div class="icon-box-icon d-inline-flex">
-                                    <i class="w-icon-envelop3"></i>
-                                </div>
-                                <div class="icon-box-content">
-                                    <h4 class="icon-box-title text-white text-uppercase font-weight-bold">
-                                        Subscribe To
-                                        Our Newsletter
-                                    </h4>
-                                    <p class="text-white">
-                                        Get all the latest information on Events, Sales and Offers.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-7 col-lg-6 col-md-9 mt-4 mt-lg-0 ">
-                            <form action="#" method="get"
-                                  class="input-wrapper input-wrapper-inline input-wrapper-rounded">
-                                <input type="email" class="form-control mr-2 bg-white" name="email" id="email"
-                                       placeholder="Your E-mail Address" />
-                                <button class="btn btn-dark btn-rounded" type="submit">
-                                    Subscribe<i class="w-icon-long-arrow-right"></i>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="footer-top">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="widget widget-about">
-                                <a asp-controller="Home" asp-action="Index" class="logo-footer">
-                                    <img src="~/assets/images/logo_footer.png" alt="logo-footer" width="144"
-                                         height="45" />
-                                </a>
-                                <div class="widget-body">
-                                    <p class="widget-about-title">Got Question? Call us 24/7</p>
-                                    <a href="tel:18005707777" class="widget-about-call">1-800-570-7777</a>
-                                    <p class="widget-about-desc">
-                                        Register now to get updates on pronot get up icons
-                                        & coupons ster now toon.
-                                    </p>
-
-                                    <div class="social-icons social-icons-colored">
-                                        <a href="#" class="social-icon social-facebook w-icon-facebook"></a>
-                                        <a href="#" class="social-icon social-twitter w-icon-twitter"></a>
-                                        <a href="#" class="social-icon social-instagram w-icon-instagram"></a>
-                                        <a href="#" class="social-icon social-youtube w-icon-youtube"></a>
-                                        <a href="#" class="social-icon social-pinterest w-icon-pinterest"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="widget">
-                                <h3 class="widget-title">Company</h3>
-                                <ul class="widget-body">
-                                    <li><a asp-controller="Home" asp-action="About">About Us</a></li>
-                                    <li><a href="#">Team Member</a></li>
-                                    <li><a href="#">Career</a></li>
-                                @*     @{
-                                        var roleName = Context.Session.GetString("UserRole");
-                                    } *@
-                                    @if (roleName == "Customer")
-                                    {
-                                    <li><a asp-controller="Home" asp-action="Contact">My Shop</a></li>
-                                        
-                                    }else{
-
-                                    <li><a asp-controller="Home" asp-action="Contact">Contact Us</a></li>
-                                    }
-                                    <li><a href="#">Affilate</a></li>
-                                    <li><a href="#">Order History</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="widget">
-                                <h4 class="widget-title">My Account</h4>
-                                <ul class="widget-body">
-                                    <li><a href="#">Track My Order</a></li>
-                                    <li><a asp-controller="Home" asp-action="Cart">View Cart</a></li>
-                                    <li><a asp-controller="Login" asp-action="Login">Login</a></li>
-                                    <li><a asp-controller="Home" asp-action="Help">Help</a></li>
-                                    <li><a asp-controller="Home" asp-action="Wishlist">My Wishlist</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="widget">
-                                <h4 class="widget-title">Customer Service</h4>
-                                <ul class="widget-body">
-                                    <li><a href="#">Payment Methods</a></li>
-                                    <li><a href="#">Money-back guarantee!</a></li>
-                                    <li><a href="#">Product Returns</a></li>
-                                    <li><a href="#">Support Center</a></li>
-                                    <li><a href="#">Shipping</a></li>
-                                    <li><a href="#">Term and Conditions</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-middle">
-                    <div class="widget widget-category">
-                        <div class="category-box">
-                            <h6 class="category-name">Consumer Electric:</h6>
-                            <a href="#">TV Television</a>
-                            <a href="#">Air Condition</a>
-                            <a href="#">Refrigerator</a>
-                            <a href="#">Washing Machine</a>
-                            <a href="#">Audio Speaker</a>
-                            <a href="#">Security Camera</a>
-                            <a href="#">View All</a>
-                        </div>
-                        <div class="category-box">
-                            <h6 class="category-name">Clothing & Apparel:</h6>
-                            <a href="#">Men's T-shirt</a>
-                            <a href="#">Dresses</a>
-                            <a href="#">Men's Sneacker</a>
-                            <a href="#">Leather Backpack</a>
-                            <a href="#">Watches</a>
-                            <a href="#">Jeans</a>
-                            <a href="#">Sunglasses</a>
-                            <a href="#">Boots</a>
-                            <a href="#">Rayban</a>
-                            <a href="#">Acccessories</a>
-                        </div>
-                        <div class="category-box">
-                            <h6 class="category-name">Home, Garden & Kitchen:</h6>
-                            <a href="#">Sofa</a>
-                            <a href="#">Chair</a>
-                            <a href="#">Bed Room</a>
-                            <a href="#">Living Room</a>
-                            <a href="#">Cookware</a>
-                            <a href="#">Utensil</a>
-                            <a href="#">Blender</a>
-                            <a href="#">Garden Equipments</a>
-                            <a href="#">Decor</a>
-                            <a href="#">Library</a>
-                        </div>
-                        <div class="category-box">
-                            <h6 class="category-name">Health & Beauty:</h6>
-                            <a href="#">Skin Care</a>
-                            <a href="#">Body Shower</a>
-                            <a href="#">Makeup</a>
-                            <a href="#">Hair Care</a>
-                            <a href="#">Lipstick</a>
-                            <a href="#">Perfume</a>
-                            <a href="#">View all</a>
-                        </div>
-                        <div class="category-box">
-                            <h6 class="category-name">Jewelry & Watches:</h6>
-                            <a href="#">Necklace</a>
-                            <a href="#">Pendant</a>
-                            <a href="#">Diamond Ring</a>
-                            <a href="#">Silver Earing</a>
-                            <a href="#">Leather Watcher</a>
-                            <a href="#">Rolex</a>
-                            <a href="#">Gucci</a>
-                            <a href="#">Australian Opal</a>
-                            <a href="#">Ammolite</a>
-                            <a href="#">Sun Pyrite</a>
-                        </div>
-                        <div class="category-box">
-                            <h6 class="category-name">Computer & Technologies:</h6>
-                            <a href="#">Laptop</a>
-                            <a href="#">iMac</a>
-                            <a href="#">Smartphone</a>
-                            <a href="#">Tablet</a>
-                            <a href="#">Apple</a>
-                            <a href="#">Asus</a>
-                            <a href="#">Drone</a>
-                            <a href="#">Wireless Speaker</a>
-                            <a href="#">Game Controller</a>
-                            <a href="#">View all</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <div class="footer-left">
-                        <p class="copyright">Copyright © 2021 Wolmart Store. All Rights Reserved.</p>
-                    </div>
-                    <div class="footer-right">
-                        <span class="payment-label mr-lg-8">We're using safe payment for</span>
-                        <figure class="payment">
-                            <img src="~/assets/images/payment.png" alt="payment" width="159" height="25" />
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- End of Footer -->
-    </div>
-    <!-- End of Page-wrapper-->
+    @RenderBody()
+        </div>
+        <!-- End of Page-wrapper-->
         <!-- Plugin JS File -->
-        <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="~/assets/vendor/jquery/jquery.min.js"></script>
+        <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script src="~/assets/vendor/jquery/jquery.min.js"></script>
         <script src="~/assets/vendor/jquery.plugin/jquery.plugin.min.js"></script>
         <script src="~/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
         <script src="~/assets/vendor/zoom/jquery.zoom.js"></script>
@@ -1036,5 +836,5 @@
         <script src="~/js/Toastify.js"></script>
         <!-- Main JS -->
         <script src="~/assets/js/main.min.js"></script>
-                        </body>
-                        </html>
+    </body>
+</html>
