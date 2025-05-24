@@ -93,7 +93,18 @@
                         <!-- End of Dropdown Menu -->
                         <span class="divider d-lg-show"></span>
                         @* <a asp-controller="Home" asp-action="Blog" class="d-lg-show">Blog</a> *@
-                        <a asp-controller="Home" asp-action="Contact" class="d-lg-show">Contact Us</a>
+                        @{
+                            var roleName = Context.Session.GetString("UserRole");
+                        }
+                        @if(roleName == "Customer")
+                        {
+                            <a asp-controller="Home" asp-action="Contact" class="d-lg-show">Contact Us</a>
+                        }
+                        else if(roleName == "Seller")
+                        {
+                        <a asp-controller="Home" asp-action="Contact" class="d-lg-show">My Shop</a>
+                        
+                        }
                         <a asp-controller="Home" asp-action="Account" class="d-lg-show">My Account</a>
                         <a asp-controller="Login" asp-action="Login" class="d-lg-show login sign-in">
                             <i class="w-icon-account"></i>Sign In
@@ -875,7 +886,17 @@
                                     <li><a asp-controller="Home" asp-action="About">About Us</a></li>
                                     <li><a href="#">Team Member</a></li>
                                     <li><a href="#">Career</a></li>
+                                @*     @{
+                                        var roleName = Context.Session.GetString("UserRole");
+                                    } *@
+                                    @if (roleName == "Customer")
+                                    {
+                                    <li><a asp-controller="Home" asp-action="Contact">My Shop</a></li>
+                                        
+                                    }else{
+
                                     <li><a asp-controller="Home" asp-action="Contact">Contact Us</a></li>
+                                    }
                                     <li><a href="#">Affilate</a></li>
                                     <li><a href="#">Order History</a></li>
                                 </ul>
