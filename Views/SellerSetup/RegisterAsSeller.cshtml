@@ -60,7 +60,7 @@
         <!-- Right Side -->
         <div class="col-md-6 d-flex align-items-center justify-content-center p-5">
             <div class="w-100" style="max-width: 500px">
-                <h2 class="mb-4 fw-bold">Create Account</h2>
+                <h2 class="mb-4 fw-bold">Create Seller Account</h2>
 
                 <form>
                     <div class="row g-3">
@@ -85,6 +85,12 @@
                              <label class="form-label">Store Name</label>
                              <input type="text" id="storeName" class="form-control" >
                         </div>
+                        <div class="col-md-12">
+                             <label class="form-label select2">Store Category</label>
+                             <select>
+                                   <option value="value">Select Categories</option>
+                             </select>
+                        </div>
                         <div class="col-12">
                             <label class="form-label">Enter Password Again</label>
                             <input type="password" id="password" class="form-control" >
@@ -93,7 +99,7 @@
                
 
                         <div class="col-12">
-                            <button class="btn btn-primary w-100 py-2" onclick="RegisterUser()">Create Account</button>
+                            <button class="btn btn-primary w-100 py-2" onclick="RegisterUser()">Create Seller Account</button>
                         </div>
                     </div>
                 </form>
@@ -113,3 +119,10 @@
     </div>
 </div>
 </main>
+<script src=""></script>
+
+<script>
+    $(document).ready(function () {
+        $('.select2').select2();
+    });
+</script>
