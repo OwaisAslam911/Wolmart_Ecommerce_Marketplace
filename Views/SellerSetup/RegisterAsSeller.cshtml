@@ -6,8 +6,9 @@
     ViewData["Title"] = "RegisterAsSeller";
 }
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<!-- Topbar -->
 <main class="main">
-<div class="container-fluid vh-100">
+    <div class="container-fluid vh-100 ">
     <div class="row h-100">
         <!-- Left Side -->
         <div class="col-md-6 bg-info bg-opacity-10 d-none d-md-flex align-items-center">
@@ -65,37 +66,31 @@
                     <div class="row g-3">
                         <div class="col-md-6">
                             <label class="form-label">First Name</label>
-                            <input type="text" id="firstName" class="form-control" required>
+                            <input type="text" id="firstName" class="form-control" >
                         </div>
                         <div class="col-md-6">
                             <label class="form-label">Last Name</label>
-                            <input type="text" id="lastName" class="form-control" required>
+                            <input type="text" id="lastName" class="form-control" >
                         </div>
 
                         <div class="col-12">
                             <label class="form-label">Email</label>
-                            <input type="email" id="email" class="form-control" required>
+                            <input type="email" id="email" class="form-control" >
                         </div>
-
+                        <div class="col-md-6">
+                            <label class="form-label">Phone</label>
+                            <input type="text" id="phone" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                             <label class="form-label">Store Name</label>
+                             <input type="text" id="storeName" class="form-control" >
+                        </div>
                         <div class="col-12">
-                            <label class="form-label">Password</label>
-                            <input type="password" id="password" class="form-control" required>
+                            <label class="form-label">Enter Password Again</label>
+                            <input type="password" id="password" class="form-control" >
                             <div class="form-text">Minimum 8 characters with 1 number</div>
                         </div>
-
-                        <div class="col-12">
-                            <label class="form-label">Confirm Password</label>
-                            <input type="password" id="confirmPassword" class="form-control" required>
-                        </div>
-
-                        @*     <div class="col-12">
-                        <div class="form-check">
-                        <input class="form-check-input" type="checkbox" required>
-                        <label class="form-check-label">
-                        I agree to the <a href="#" class="text-decoration-none">Terms & Conditions</a>
-                        </label>
-                        </div>
-                        </div> *@
+               
 
                         <div class="col-12">
                             <button class="btn btn-primary w-100 py-2" onclick="RegisterUser()">Create Account</button>
@@ -111,23 +106,7 @@
                         </a>
                     </p>
 
-                    <div class="d-flex align-items-center my-4">
-                        <hr class="flex-grow-1">
-                        <span class="px-3 text-muted">or continue with</span>
-                        <hr class="flex-grow-1">
-                    </div>
-
-                    <div class="d-flex gap-3 justify-content-center">
-                        <button class="btn btn-outline-dark btn-lg rounded-circle">
-                            <i class="bi bi-google"></i>
-                        </button>
-                        <button class="btn btn-outline-dark btn-lg rounded-circle">
-                            <i class="bi bi-facebook"></i>
-                        </button>
-                        <button class="btn btn-outline-dark btn-lg rounded-circle">
-                            <i class="bi bi-apple"></i>
-                        </button>
-                    </div>
+              
                 </div>
             </div>
         </div>
